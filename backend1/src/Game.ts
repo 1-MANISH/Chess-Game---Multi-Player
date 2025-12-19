@@ -66,6 +66,9 @@ export class Game{
                         return
                 }
 
+                // we save the move to DB  - for recovery purposes
+                // await db.moves.push(move)
+
                 // check is game over
 
                 if(this.board.isGameOver()){
